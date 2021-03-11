@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ShadowPal'`, () => {
+  it(`should have as title 'guardDemoProj'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ShadowPal');
+    expect(app.title).toEqual('guardDemoProj');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ShadowPal app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('guardDemoProj app is running!');
   });
 });
